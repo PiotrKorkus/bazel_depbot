@@ -14,7 +14,7 @@ bazel_dep(name = "buildifier_prebuilt", version = "7.3.1")
 bazel_dep(name = "platforms", version = "1.0.0")
 
 # S-CORE
-bazel_dep(name = "score_tooling", version = "1.0.4")
+bazel_dep(name = "score_tooling", version = "1.0.3")
 
 # Others
 bazel_dep(name = "googletest", version = "1.14.0")
