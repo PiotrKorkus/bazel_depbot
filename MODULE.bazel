@@ -1,0 +1,43 @@
+module(
+    name = "test_module",
+    version = "0.0.1",
+    compatibility_level = 0,
+)
+
+# Bazel global rules
+bazel_dep(name = "rules_python", version = "1.4.1")
+bazel_dep(name = "bazel_skylib", version = "1.7.1")
+bazel_dep(name = "rules_rust", version = "0.61.0")
+bazel_dep(name = "rules_cc", version = "0.1.1")
+bazel_dep(name = "aspect_rules_lint", version = "1.0.3")
+bazel_dep(name = "buildifier_prebuilt", version = "7.3.1")
+bazel_dep(name = "platforms", version = "1.0.0")
+
+# S-CORE
+bazel_dep(name = "score_tooling", version = "1.0.4")
+
+# Others
+bazel_dep(name = "googletest", version = "1.14.0")
+
+
+# Extensions
+
+
+PYTHON_VERSION = "3.12"
+
+python = use_extension("@rules_python//python/extensions:python.bzl", "python", dev_dependency = True)
+python.toolchain(
+    is_default = True,
+    python_version = PYTHON_VERSION,
+)
+
+# pip = use_extension("@rules_python//python/extensions:pip.bzl", "pip", dev_dependency = True)
+# pip.parse(
+#     hub_name = "pip_test",
+#     python_version = PYTHON_VERSION,
+#     requirements_lock = "//:requirements.txt.lock",
+# )
+
+use_repo(python)
+
+# use_repo(pip, "pip_test")
