@@ -4,13 +4,6 @@
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 2
-# registries:
-#   eclipse-score-bazel-registry:
-#     type: git
-#     # url: "https://raw.githubusercontent.com/eclipse-score/bazel_registry/main/"
-#     url: https://github.com/eclipse-score/bazel_registry
-#     username: x-access-token
-#     password: ${{secrets.MY_GITHUB_PERSONAL_TOKEN}}
 updates:
   - package-ecosystem: "bazel" # See documentation for possible values
     directory: "/" # Location of package manifests
