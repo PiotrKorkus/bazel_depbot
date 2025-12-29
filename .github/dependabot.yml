@@ -17,4 +17,5 @@ updates:
     schedule:
       interval: "weekly"
     registries: "*"
+    open-pull-requests-limit: 25
 
