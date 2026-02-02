@@ -1,6 +1,6 @@
 module(
     name = "test_module",
-    version = "0.0.1",
+    version = "0.0.0",
     compatibility_level = 0,
 )
 
@@ -14,7 +14,9 @@ bazel_dep(name = "buildifier_prebuilt", version = "8.2.1.1")
 bazel_dep(name = "platforms", version = "1.0.0")
 
 # S-CORE
-bazel_dep(name = "score_tooling", version = "1.0.3")
+bazel_dep(name = "score_tooling", version = "1.0.5")
+bazel_dep(name = "score_docs_as_code", version = "2.3.2")
+bazel_dep(name = "score_process", version = "1.4.2")
 
 # Others
 bazel_dep(name = "googletest", version = "1.17.0.bcr.2")
