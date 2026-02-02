@@ -1,0 +1,30 @@
+name: Build Docs
+
+permissions:
+  contents: write
+  pages: write
+  pull-requests: write
+  id-token: write
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize] # Allows forks to trigger the docs build
+  push:
+    branches:
+      - main
+  merge_group:
+    types: [checks_requested]
+  release:
+    types: [created, edited]
+
+jobs:
+  docs-build:
+    uses: qorix-group/cicd-workflows/.github/workflows/docs.yml@piotrkorkus_pages_for_release
+    permissions:
+      contents: write
+      pages: write
+      pull-requests: write
+      id-token: write
+    with:
+      bazel-target: "//:docs -- --github_user=${{ github.repository_owner }} --github_repo=${{ github.event.repository.name }}"
+      retention-days: 3
