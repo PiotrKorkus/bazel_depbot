@@ -6,5 +6,9 @@
   {
     "version": "pr-16",
     "url": "https://PiotrKorkus.github.io/bazel_depbot/pr-16/"
+  },
+  {
+    "version": "v0.0.1",
+    "url": "https://PiotrKorkus.github.io/bazel_depbot/v0.0.1/"
   }
 ]
