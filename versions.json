@@ -2,5 +2,9 @@
   {
     "version": "main",
     "url": "https://PiotrKorkus.github.io/bazel_depbot/main/"
+  },
+  {
+    "version": "pr-16",
+    "url": "https://PiotrKorkus.github.io/bazel_depbot/pr-16/"
   }
 ]
