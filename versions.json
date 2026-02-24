@@ -22,5 +22,9 @@
   {
     "version": "pr-19",
     "url": "https://PiotrKorkus.github.io/bazel_depbot/pr-19/"
+  },
+  {
+    "version": "pr-20",
+    "url": "https://PiotrKorkus.github.io/bazel_depbot/pr-20/"
   }
 ]
