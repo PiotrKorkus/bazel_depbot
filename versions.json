@@ -78,5 +78,9 @@
   {
     "version": "pr-36",
     "url": "https://PiotrKorkus.github.io/bazel_depbot/pr-36/"
+  },
+  {
+    "version": "pr-38",
+    "url": "https://PiotrKorkus.github.io/bazel_depbot/pr-38/"
   }
 ]
